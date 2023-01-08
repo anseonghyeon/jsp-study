@@ -16,7 +16,7 @@
     <br>
     <input type="password" name="pw">
     <br>
-    <input type="submit" value="전 송">
+    <input type="submit" value="로 그 인">
 </form>
 </body>
 </html>

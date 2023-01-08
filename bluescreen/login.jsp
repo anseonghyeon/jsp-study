@@ -15,10 +15,10 @@
     String id = request.getParameter("id");
     if(id == "ash") {
 %>
-        <%=  id + "환영합니다"%>
+        <%=  id + " 환영합니다"%>
 <%
     }
 %>
-<%--<%=  id + "환영합니다"%>--%>
+
 </body>
 </html>
