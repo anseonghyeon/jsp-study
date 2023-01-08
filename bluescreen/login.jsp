@@ -17,13 +17,13 @@
     String id = request.getParameter("id");
     String pw = request.getParameter("pw");
     FileOutputStream output = new FileOutputStream("\\user.txt");
-    if(login.equals("login")) {
+    if(login != null && login.equals("login")) {
         if(id != null && id.equals("anseonghyeon")) {
             //환영합니다
         } else {
             //로그인 실패
         }
-    } else if(signup.equals("signup")) {
+    } else if(signup != null && signup.equals("signup")) {
         //텍스트 파일에 아이디랑 패스워드 저장
         output.write(id.getBytes());
         output.write(pw.getBytes());
