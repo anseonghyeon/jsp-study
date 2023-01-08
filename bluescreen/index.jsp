@@ -9,16 +9,27 @@
 <html>
 <head>
     <title>Title</title>
+    <style>
+        .inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
 </head>
 <body>
-<h1>LOGIN</h1>
-<form action="login.jsp" method="post">
-    ID<input type="text" name="id">
-    <br>
-    PW<input type="password" name="pw">
-    <br>
-    <input type="submit" value="로 그 인">
-    <input type="submit" value="회 원 가입">
-</form>
+<div class="inner">
+    <h1>LOGIN</h1>
+    <form action="login.jsp" method="post">
+        ID<input type="text" name="id">
+        <br>
+        PW<input type="password" name="pw">
+        <br>
+        <input type="submit" value="로 그 인">
+        <input type="submit" value="회 원 가입">
+    </form>
+</div>
+
 </body>
 </html>
