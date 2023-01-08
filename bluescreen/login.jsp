@@ -19,7 +19,7 @@
 //    FileOutputStream output = new FileOutputStream("..\\..\\u\\user.txt");
     if(login != null || login.equals("login")) {
         if(id != null || id.equals("anseonghyeon")) {
-            if (pw != null || pw.equals("0927")) {
+            if (pw != null && pw.equals("0927")) {
 %>
                 <%= id+"님 안녕하세요"%>
 <%
