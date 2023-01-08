@@ -16,8 +16,9 @@
     if(id != null && id.equals("anseonghyeon")) {
 %>
         <%=  id + " 환영합니다"%>
+<%
     } else {
-
+%>
         <%= "로그인 실패"%>
 <%
     }
