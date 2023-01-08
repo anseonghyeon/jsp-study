@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
+<h1>LOGIN</h1>
 <form action="login.jsp" method="post">
     <input type="text" name="id">
     <br>
