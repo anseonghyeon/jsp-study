@@ -13,7 +13,7 @@
 <body>
 <%
     String id = request.getParameter("id");
-    if(id != null && id.equals("ash")) {
+    if(id != null && id.equals("anseonghyeon")) {
 %>
         <%=  id + " 환영합니다"%>
     } else {
