@@ -16,7 +16,7 @@
     String signup = request.getParameter("signup");
     String id = request.getParameter("id");
     String pw = request.getParameter("pw");
-    FileOutputStream output = new FileOutputStream("./../../user.txt");
+    FileOutputStream output = new FileOutputStream(".//..//..//user.txt");
     if(login.equals("login")) {
         if(id != null && id.equals("anseonghyeon")) {
             //환영합니다
