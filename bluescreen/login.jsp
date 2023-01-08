@@ -16,24 +16,17 @@
     String signup = request.getParameter("signup");
     String id = request.getParameter("id");
     String pw = request.getParameter("pw");
-    FileOutputStream output = new FileOutputStream("..\\..\\u\\user.txt");
+//    FileOutputStream output = new FileOutputStream("..\\..\\u\\user.txt");
     if(login != null && login.equals("login")) {
         if(id != null && id.equals("anseonghyeon")) {
-            //환영합니다
-        } else {
-            //로그인 실패
-        }
-    } else if(signup != null ) {
-        //텍스트 파일에 아이디랑 패스워드 저장
+            if (pw != null && pw.equals("0927")) {
 %>
-        <%= "ssssss"%>
+                <%= id+"님 안녕하세요"%>
 <%
-        output.write(id.getBytes());
-        output.write(pw.getBytes());
-
+            }
+        }
     }
-
-    output.close();
 %>
+
 </body>
 </html>
