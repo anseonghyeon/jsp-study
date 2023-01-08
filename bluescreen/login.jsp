@@ -13,11 +13,11 @@
 <body>
 <%
     String login = request.getParameter("login");
-    String signup = request.getParameter("signup");
+//    String signup = request.getParameter("signup");
     String id = request.getParameter("id");
     String pw = request.getParameter("pw");
 //    FileOutputStream output = new FileOutputStream("..\\..\\u\\user.txt");
-    if(login != null || login.equals("login")) {
+    if(login != null && login.equals("login")) {
         if(id != null && id.equals("anseonghyeon")) {
             if (pw != null && pw.equals("0927")) {
 %>
