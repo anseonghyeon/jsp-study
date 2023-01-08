@@ -13,9 +13,9 @@
 <body>
 <h1>LOGIN</h1>
 <form action="login.jsp" method="post">
-    <input type="text" name="id">
+    ID<input type="text" name="id">
     <br>
-    <input type="password" name="pw">
+    PW<input type="password" name="pw">
     <br>
     <input type="submit" value="로 그 인">
     <input type="submit" value="회 원 가입">
