@@ -13,7 +13,7 @@
 <body>
 <%
     String id = request.getParameter("id");
-    if(id != "anseonghyeon") {
+    if(id != "ash") {
 %>
         <%=  id + "환영합니다"%>
 <%
