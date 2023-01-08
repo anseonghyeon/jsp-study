@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>시작페이지</title>
     <style>
         .inner {
             position: absolute;
@@ -26,8 +26,8 @@
         <br>
         PW<input type="password" name="pw">
         <br>
-        <input type="submit" value="로 그 인">
-        <input type="submit" value="회 원 가입">
+        <input type="submit" name="login"  value="로 그 인">
+        <input type="submit" name="signup" value="회 원 가입">
     </form>
 </div>
 

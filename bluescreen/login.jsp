@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.io.FileOutputStream" %><%--
   Created by IntelliJ IDEA.
   User: anseonghyeon
   Date: 2023/01/08
@@ -8,20 +8,29 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>두번째페이지</title>
 </head>
 <body>
 <%
+    String login = request.getParameter("login");
+    String signup = request.getParameter("signup");
     String id = request.getParameter("id");
-    if(id != null && id.equals("anseonghyeon")) {
-%>
-        <%=  id + " 환영합니다"%>
-<%
-    } else {
-%>
-        <%= "로그인 실패"%>
-<%
+    String pw = request.getParameter("pw");
+    FileOutputStream output = new FileOutputStream("../../user.txt");
+    if(login.equals("login")) {
+        if(id != null && id.equals("anseonghyeon")) {
+            //환영합니다
+        } else {
+            //로그인 실패
+        }
+    } else if(signup.equals("signup")) {
+        //텍스트 파일에 아이디랑 패스워드 저장
+        output.write(id.getBytes());
+        output.write(pw.getBytes());
+
     }
+
+    output.close();
 %>
 </body>
 </html>
