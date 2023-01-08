@@ -15,7 +15,6 @@
     String id = request.getParameter("id");
     if(id == "anseonghyeon") {
 %>
-    }
         <%=  id + "환영합니다"%>
 <%
     }
