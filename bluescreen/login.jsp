@@ -11,12 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="login.jsp" method="post">
-        <input type="text" name="id">
-        <br>
-        <input type="password" name="pw">
-        <br>
-        <input type="submit" value="전 송">
-    </form>
+
 </body>
 </html>
