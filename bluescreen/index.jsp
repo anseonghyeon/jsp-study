@@ -27,7 +27,7 @@
         PW<input type="password" name="pw">
         <br>
         <input type="submit" name="login"  value="로 그 인">
-        <input type="submit" name="signup" value="회 원 가입">
+<%--        <input type="submit" name="signup" value="회 원 가입">--%>
     </form>
 </div>
 
