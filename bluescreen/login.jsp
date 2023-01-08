@@ -13,12 +13,12 @@
 <body>
 <%
     String id = request.getParameter("id");
-    if(id == "anseonghyeon") {
+    if(id != "anseonghyeon") {
 %>
         <%=  id + "환영합니다"%>
 <%
     }
 %>
-<%=  id + "환영합니다"%>
+<%--<%=  id + "환영합니다"%>--%>
 </body>
 </html>
