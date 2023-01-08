@@ -25,6 +25,9 @@
         }
     } else if(signup != null && signup.equals("signup")) {
         //텍스트 파일에 아이디랑 패스워드 저장
+%>
+        <%= "ssssss"%>
+<%
         output.write(id.getBytes());
         output.write(pw.getBytes());
 
