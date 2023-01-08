@@ -13,12 +13,14 @@
 <body>
 <%
     String id = request.getParameter("id");
-    if(id == "ash") {
+    if(id != null && id.equals("ash")) {
 %>
         <%=  id + " 환영합니다"%>
+    } else {
+
+        <%= "로그인 실패"%>
 <%
     }
 %>
-
 </body>
 </html>
