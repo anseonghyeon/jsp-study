@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>시작페이지</title>
+    <link href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <style>
         .inner {
             position: absolute;
