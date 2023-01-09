@@ -25,7 +25,7 @@
     <form action="login.jsp" method="post">
         ID<input type="text" name="id" class="form-control">
         <br>
-        PW<input type="password" name="pw" class="mb-3">
+        PW<input type="password" name="pw" class="form-control">
         <br>
         <input type="submit" name="login"  value="로 그 인" class="btn btn-outline-primary">
 <%--        <input type="submit" name="signup" value="회 원 가입">--%>
