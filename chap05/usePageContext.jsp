@@ -22,6 +22,6 @@ request 기본 객체와 pageContext.getRequest()의 동일 여부:
 
 pageContext.getOut() 메서드를 사용한 데이터 출력:
 
-<% pageContxt.getOut().println("안녕하세요!"); %>
+<% pageContext.getOut().println("안녕하세요!"); %>
 </body>
 </html>
