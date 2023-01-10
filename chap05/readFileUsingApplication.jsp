@@ -13,7 +13,7 @@
 </head>
 <body>
 <%
-  String resourcePath = "./message/notice.txt";
+  String resourcePath = ".home/anseonghyeon/apache-tomcat-9.0.70/webapps/jsp-study/chap05/message/notice.txt";
 
 %>
 자원의 실제 경로: <br>
