@@ -16,7 +16,7 @@
   char[] buff = new char[128];
   int len = -1;
 
-  String filePath = "/jsp-study/chap05/message/notice.txt";
+  String filePath = "/home/anseonghyeon/apache-tomcat-9.0.70/webapps/jsp-study/chap05/message/notice.txt";
   try(InputStreamReader fr = new InputStreamReader(new FileInputStream(filePath), "UTF-8")) {
     while ((len = fr.read(buff)) != -1) {
       out.print(new String(buff,0,len));
