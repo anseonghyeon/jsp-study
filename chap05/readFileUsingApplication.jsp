@@ -13,7 +13,7 @@
 </head>
 <body>
 <%
-  String resourcePath = "/jsp-study/message/notice.txt";
+  String resourcePath = "jsp-study/chap05/message/notice.txt";
 
 %>
 자원의 실제 경로: <br>
