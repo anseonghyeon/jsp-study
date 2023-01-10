@@ -13,7 +13,7 @@
 </head>
 <body>
 <%
-  String resourcePath = ".home/anseonghyeon/apache-tomcat-9.0.70/webapps/jsp-study/chap05/message/notice.txt";
+  String resourcePath = "/jsp-study/chap05/message/notice.txt";
 
 %>
 자원의 실제 경로: <br>
@@ -26,7 +26,7 @@
   char[] buff = new char[128];
   int len = -1;
 
-  try(InputStreamReader br = null)//new InputStreamReader(application.getResourceAsStream(resourcePath),"UTF-8"))
+  try(InputStreamReader br = new InputStreamReader(application.getResourceAsStream(resourcePath),"UTF-8"))
   {
     while ((len = br.read(buff)) != -1) {
       out.print(new String(buff,0,len));
