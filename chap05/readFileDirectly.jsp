@@ -16,7 +16,7 @@
   char[] buff = new char[128];
   int len = -1;
 
-  String filePath = "message/notice.txt";
+  String filePath = "./message/notice.txt";
   try(InputStreamReader fr = new InputStreamReader(
           new FileInputStream(filePath), "UTF-8"
   )) {
