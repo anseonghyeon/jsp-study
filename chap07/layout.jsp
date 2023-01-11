@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html; charset=utf-8"%>
-<<html>
+<html>
 <head>
   <title>layout1</title>
 </head>
