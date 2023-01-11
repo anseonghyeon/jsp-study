@@ -20,7 +20,7 @@
     <jsp:param name="name" value="안성현"/>
   </jsp:include>
 
-  </hr>
+  <hr>
   include 후 name 파라미터 값: <%= request.getParameter("name")%>
 
 </body>
