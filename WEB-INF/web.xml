@@ -10,6 +10,7 @@
             <include-coda>/chap07/common/footer.jspf</include-coda>
         </jsp-property-group>
     </jsp-config>
+
     <context-param>
         <description>로깅 여부</description>
         <param-name>logEnabled</param-name>
