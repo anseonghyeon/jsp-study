@@ -5,7 +5,7 @@
          version="4.0">
     <jsp-config>
         <jsp-property-group>
-            <url-pattern>/chap07/view/autoInclude.jsp</url-pattern>
+            <url-pattern>/chap07/view/*</url-pattern>
             <include-prelude>/chap07/common/variable.jspf</include-prelude>
             <include-coda>/chap07/common/footer.jspf</include-coda>
         </jsp-property-group>
