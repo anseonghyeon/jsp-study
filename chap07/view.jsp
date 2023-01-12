@@ -13,9 +13,9 @@
   if(code.equals("A")) {
     viewPageURI = "/chap07/viewModule/a.jsp";
   } else if(code.equals("B")) {
-    viewPageURI = "/chap07/viewModule/b.jsp"
+    viewPageURI = "/chap07/viewModule/b.jsp";
   } else if(code.equals("C")) {
-    viewPageURI = "/chap07/viewModule/c.jsp"
+    viewPageURI = "/chap07/viewModule/c.jsp";
   }
 %>
 <jsp:forward page="<%=viewPageURI%>"></jsp:forward>
