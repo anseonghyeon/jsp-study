@@ -21,7 +21,7 @@
       <td>이름</td>
       <td><input type="text" name="name" size="10"> </td>
       <td>이메일</td>
-      <td><input type="text" name="name" size="10"> </td>
+      <td><input type="text" name="email" size="10"> </td>
     </tr>
     <tr>
       <td colspan="4" align="center">
