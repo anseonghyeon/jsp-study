@@ -14,7 +14,7 @@
       if(cookies[i].getName().equals("name")) {
         Cookie cookie = new Cookie("name","");
         cookie.setMaxAge(0);
-        response,addCookie(cookie);
+        response.addCookie(cookie);
       }
     }
   }
