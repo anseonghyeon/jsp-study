@@ -11,4 +11,4 @@
   member.setId("madvirus");
   member.setName("최범균");
 %>
-<jsp:forward page="/chap08/useObject.jsp"/>
+<jsp:forward page="useObject.jsp"/>
