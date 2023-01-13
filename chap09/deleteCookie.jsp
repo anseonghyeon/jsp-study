@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html; charset=utf-8"%>
-<%@ page import="java.net.IRLEncoder"%>
+<%@ page import="java.net.URLEncoder"%>
 <%
   Cookie[] cookies = request.getCookies();
   if(cookies != null && cookies.length > 0) {
