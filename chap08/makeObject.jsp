@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html; charset=utf-8"%>
-<jsp:useBean id="member" scope="request" class="src/chap08.member.MemberInfo"/>
+<jsp:useBean id="member" scope="request" class="/WEB-INF/classes/chap08/member/MemberInfo.class"/>
 <%
   member.setId("madvirus");
   member.setName("최범균");
