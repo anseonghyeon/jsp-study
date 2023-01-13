@@ -26,10 +26,6 @@
         <location>/chap06/error/error404.jsp</location>
     </error-page>
     <error-page>
-        <error-code>500</error-code>
-        <location>/chap06/error/error500.jsp</location>
-    </error-page>
-    <error-page>
         <exception-type>java.lang.NullPointerException</exception-type>
         <location>/chap06/error/errorNullPointer.jsp</location>
     </error-page>
