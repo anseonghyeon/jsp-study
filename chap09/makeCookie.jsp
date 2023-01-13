@@ -8,7 +8,7 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <%@ page import="java.net.URLEncoder" %>
 <%
-  Cookie cookie = new Cookie("name",IRLEncoder.encode("최범균","utf-8"));
+  Cookie cookie = new Cookie("name",URLEncoder.encode("최범균","utf-8"));
   response.addCookie(cookie);
 %>
 <html>
