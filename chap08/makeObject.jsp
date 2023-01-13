@@ -6,9 +6,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html; charset=utf-8"%>
-<jsp:useBean id="member" scope="request" class="chap08.member.MemberInfo"/>
-<%--<%--%>
-<%--  member.setId("madvirus");--%>
-<%--  member.setName("최범균");--%>
-<%--%>--%>
-<%--<jsp:forward page="/chap08/useObject.jsp"/>--%>
+<jsp:useBean id="member" scope="request" class="classes.chap08.member.MemberInfo"/>
+<%
+  member.setId("madvirus");
+  member.setName("최범균");
+%>
+<jsp:forward page="/chap08/useObject.jsp"/>
