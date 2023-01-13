@@ -38,7 +38,7 @@
 <%=cookie3.getName()%>=<%=cookie3.getValue()%>
 [<%=cookie3.getPath()%>]
 <br>
-<%=cookie4.getName()%>=<%cookie4.getValue()%>
+<%=cookie4.getName()%>=<%=cookie4.getValue()%>
 [<%=cookie4.getPath()%>]
 </body>
 </html>
