@@ -8,6 +8,7 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <%--<%@ page import ="util.Cookies"%>--%>
 <%
+
   Cookie cookie = new Cookie(request);
 %>
 <html>
@@ -16,7 +17,7 @@
 </head>
 <body>
 <%
-  if(cookie.exists("AUTH")) {
+  if(true) {
 %>
 아이디 "<%=cookie.getValue("AUTH")%>"로 로그인 한 상태
 <%
