@@ -51,7 +51,7 @@
 <%
                     String fileP = application.getRealPath("/chat.txt");
                     BufferedWriter writer = new BufferedWriter(new FileWriter(fileP,true));
-                    writer.write();
+                    writer.write("test");
                     writer.close();
 
 %>
