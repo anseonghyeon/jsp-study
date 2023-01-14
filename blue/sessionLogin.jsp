@@ -52,7 +52,7 @@
                     %>
                     <h1>현재"<%=memberId%>"로 접속 중입니다</h1>
                     <div style="height: 600px; width: 600px; background-color: cornflowerblue">
-                        <form action="<%=request.getContextPath()%>/sessionLogin.js" method="post">
+                        <form action="<%=request.getContextPath()%>/sessionLogin.jsp" method="post">
                             <textarea cols="50" rows="30" name="textarea">
                                 <%
                                     BufferedReader r = new BufferedReader(new FileReader(fileP));
