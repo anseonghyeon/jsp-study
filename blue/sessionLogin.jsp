@@ -48,6 +48,7 @@
                         <form action="<%=request.getContextPath()%>/sessionLogin.jsp" method="post">
                             <textarea cols="50" rows="30" name="textarea">
                                 <%
+                                    String fileP = application.getRealPath("/chat.txt");
                                     BufferedReader r = new BufferedReader(new FileReader(fileP));
                                     out.println(r.readLine());
 
