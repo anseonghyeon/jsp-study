@@ -12,7 +12,7 @@
     String password = request.getParameter("password");
 
     String filePath = application.getRealPath("/user.txt");
-    reader = new BufferedReader(new FileReader(filePath));
+    BufferedReader reader = new BufferedReader(new FileReader(filePath));
     while(reader.readLine() != null) {
         String[] s = str.split("\\s");
         if(s[0].equals(id)) {
