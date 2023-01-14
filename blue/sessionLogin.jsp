@@ -30,7 +30,9 @@
     String id = request.getParameter("id");
     String password = request.getParameter("password");
     String sign = request.getParameter("signup");
-    response.sendRedirect("/signup.jsp");
+%>
+    <jsp:forward page="signup.jsp"></jsp:forward>
+<%
 
 
     String filePath = application.getRealPath("/user.txt");
