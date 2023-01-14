@@ -13,7 +13,8 @@
 
     String filePath = application.getRealPath("/user.txt");
     BufferedReader reader = new BufferedReader(new FileReader(filePath));
-    while(reader.readLine() != null) {
+    String str =null;
+    while((str = reader.readLine()) != null) {
         String[] s = str.split("\\s");
         if(s[0].equals(id)) {
             if(s[1].equals(password)) {
