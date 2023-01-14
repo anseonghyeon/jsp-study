@@ -21,11 +21,16 @@
     reader = new BufferedReader(new FileReader(filePath));
     while (true) {
       String str = reader.readLine();
+      String[] s = str.split(" ");
+
       if(str == null) {
         break;
       }
-      if(id.equals(str)) {
-        col = str;
+      if(id.equals(s[0])) {
+        if(password.equals(s[1])) {
+          col = str;
+        }
+
       }
     }
   } catch (FileNotFoundException e) {
