@@ -49,7 +49,9 @@
 <%
                         String fp = application.getRealPath("/chat.txt");
                         BufferedReader r = new BufferedReader(new FileReader(fp));
-                        out.println(r.readLine());
+%>
+                        <%=r.readLine()%>
+<%
 
 %>
                         <form>
