@@ -42,21 +42,27 @@
                 if(login) {
 %>
                 <div class="box">
+                    <%
+                        String fileP = application.getRealPath("/chat.txt");
+                        BufferedWriter writer = new BufferedWriter(new FileWriter(fileP,true));
+
+                        writer.write(request.getParameter("textarea"));
+                        writer.close();
+
+                    %>
                     <h1>현재"<%=memberId%>"로 접속 중입니다</h1>
                     <div style="height: 600px; width: 600px; background-color: cornflowerblue">
                         <form action="<%=request.getContextPath()%>/sessionLogin.js" method="post">
                             <textarea cols="50" rows="30" name="textarea">
-                                asd
+                                <%
+                                    BufferedReader r = new BufferedReader(new FileReader(fileP));
+                                    out.println(r.readLine());
+
+                                %>
                             </textarea><br>
                             <input type="submit" value="submit">
                         </form>
-<%
-                    String fileP = application.getRealPath("/chat.txt");
-                    BufferedWriter writer = new BufferedWriter(new FileWriter(fileP,true));
-                    writer.write("test");
-                    writer.close();
 
-%>
                     </div>
                 </div>
 <%
