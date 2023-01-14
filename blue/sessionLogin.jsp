@@ -24,7 +24,12 @@
                 if(login) {
 %>
                     현재"<%=memberId%>"로 접속 중입니다
+                    <div style="height: 100px; width: 100px; background-color: cornflowerblue">
 
+                    </div>
+                    <form action="">
+
+                    </form>
 <%
                 }
             }
