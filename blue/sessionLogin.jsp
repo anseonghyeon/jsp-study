@@ -46,20 +46,9 @@
 
                     <h1>현재"<%=memberId%>"로 접속 중입니다</h1>
                     <div style="height: 600px; width: 600px; background-color: cornflowerblue">
-<%
-                        String fp = application.getRealPath("/chat.txt");
-                        BufferedReader r = new BufferedReader(new FileReader(fp));
-%>
-                        <%=r.readLine()%>
-<%
 
-%>
-                        <form>
 
-                        </form>
 
-                    </div>
-                </div>
 <%
                 }
             }
