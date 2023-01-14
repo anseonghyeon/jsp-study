@@ -54,7 +54,11 @@
 
 <%
                 }
+            } else {
+                out.println("잘못된 패스워드 입니다");
             }
+        } else {
+            out.println("잘못된 아이디 입니다");
         }
 
     }
