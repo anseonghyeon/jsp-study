@@ -25,7 +25,7 @@
     <form action="<%=request.getContextPath()%>/sessionLogin.jsp" method="post">
         ID<input type="text" name="id" class="form-control">
         <br>
-        PW<input type="password" name="pw" class="form-control">
+        PW<input type="password" name="password" class="form-control">
         <br>
         <input type="submit" name="login"  value="로 그 인" class="btn btn-outline-primary">
 <%--        <input type="submit" name="signup" value="회 원 가입">--%>
