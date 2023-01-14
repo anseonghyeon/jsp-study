@@ -19,7 +19,7 @@
   <title>로그인성공</title>
 </head>
 <body>
-로그인에 성공했습니다.
+로그인에 성공했습니다.<br>
 <jsp:include page="sessionLoginCheck.jsp"></jsp:include>
 </body>
 </html>
