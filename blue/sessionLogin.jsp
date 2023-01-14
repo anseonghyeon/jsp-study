@@ -7,6 +7,22 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+    <style>
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>
 <%
     String id = request.getParameter("id");
     String password = request.getParameter("password");
@@ -23,13 +39,15 @@
                 boolean login = memberId == null ? false : true;
                 if(login) {
 %>
-                    현재"<%=memberId%>"로 접속 중입니다
-                    <div style="height: 100px; width: 100px; background-color: cornflowerblue">
+                <div class="box">
+                    <h1>현재"<%=memberId%>"로 접속 중입니다</h1>
+                    <div style="height: 600px; width: 600px; background-color: cornflowerblue">
 
                     </div>
                     <form action="">
 
                     </form>
+                </div>
 <%
                 }
             }
@@ -38,11 +56,4 @@
     }
     reader.close();
 %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
 
-</body>
-</html>
