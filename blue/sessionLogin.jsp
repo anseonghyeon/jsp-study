@@ -29,6 +29,9 @@
 <%
     String id = request.getParameter("id");
     String password = request.getParameter("password");
+    String sign = request.getParameter("signup");
+    response.sendRedirect("/signup.jsp");
+
 
     String filePath = application.getRealPath("/user.txt");
     BufferedReader reader = new BufferedReader(new FileReader(filePath));

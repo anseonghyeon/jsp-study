@@ -28,11 +28,9 @@
     PW<input type="password" name="password" class="form-control">
     <br>
     <input type="submit" name="login"  value="로 그 인" class="btn btn-outline-primary">
-
-  </form>
-  <form action="<%=request.getContextPath()%>/signup.jsp" method="post">
     <input type="submit" name="signup" value="회 원 가 입" class="btn btn-outline-primary">
   </form>
+
 </div>
 </body>
 </html>
