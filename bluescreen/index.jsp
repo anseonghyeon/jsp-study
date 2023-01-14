@@ -5,7 +5,7 @@
   Time: 9:34 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <html>
 <head>
     <title>BlueScreen : 로그인페이지</title>
@@ -22,7 +22,7 @@
 <body>
 <div class="inner">
     <h1>LOGIN</h1>
-    <form action="<%=request.getContextPath()%>/sessionLogin.jsp" method="post">
+    <form action="<%=request.getContextPath()%>/sessionLogin.jsp" method="post" >
         ID<input type="text" name="id" class="form-control">
         <br>
         PW<input type="password" name="password" class="form-control">
