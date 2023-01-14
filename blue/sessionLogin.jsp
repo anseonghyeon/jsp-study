@@ -30,11 +30,7 @@
     String id = request.getParameter("id");
     String password = request.getParameter("password");
     String sign = request.getParameter("signup");
-    if(sign.equals("signup")) {
-%>
-    <jsp:forward page="signup.jsp"></jsp:forward>
-<%
-    }
+
 
     String filePath = application.getRealPath("/user.txt");
     BufferedReader reader = new BufferedReader(new FileReader(filePath));
