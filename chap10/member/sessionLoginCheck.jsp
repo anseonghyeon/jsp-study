@@ -21,6 +21,9 @@
   if(login) {
 %>
 아이디 "<%=memberId%>"로 로그인 한 상태
+<form action="sessionLogout.jsp" method="post" >
+  <input type="submit" value="logout">
+</form>
 <%
   } else {
 %>

@@ -19,6 +19,7 @@
 </head>
 <body>
 로그인에 성공했습니다.
+<jsp:include page="sessionLoginCheck.jsp"></jsp:include>
 </body>
 </html>
 <%
