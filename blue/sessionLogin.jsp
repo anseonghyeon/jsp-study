@@ -1,5 +1,7 @@
 <%@ page import="java.io.BufferedReader" %>
-<%@ page import="java.io.FileReader" %><%--
+<%@ page import="java.io.FileReader" %>
+<%@ page import="java.io.BufferedWriter" %>
+<%@ page import="java.io.FileWriter" %><%--
   Created by IntelliJ IDEA.
   User: anseonghyeon
   Date: 2023/01/14
@@ -42,11 +44,18 @@
                 <div class="box">
                     <h1>현재"<%=memberId%>"로 접속 중입니다</h1>
                     <div style="height: 600px; width: 600px; background-color: cornflowerblue">
+                        <form action="<%=request.getContextPath()%>/sessionLogin.js" method="post">
+                            <textarea cols="50" rows="10" name="textarea"><br>
+                            <input type="submit" value="submit">
+                        </form>
+<%
+                    String fileP = application.getRealPath("/chat.txt");
+                    BufferedWriter writer = new BufferedWriter(new FileWriter(fileP,true));
+                    writer.write();
+                    writer.close();
 
+%>
                     </div>
-                    <form action="">
-
-                    </form>
                 </div>
 <%
                 }
