@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html; charset=utf-8"%>
-<%@ page import="util.Cookies" %>
+<%--<%@ page import="util.Cookies" %>--%>
 <%@ page import="java.net.URLEncoder" %>
 <%
   String id = request.getParameter("id");
