@@ -30,8 +30,11 @@
     String id = request.getParameter("id");
     String password = request.getParameter("password");
     String sign = request.getParameter("signup");
-
-
+    if(sign.equals("signup")) {
+%>
+    <jsp:forward page="/signup.jsp"></jsp:forward>
+<%
+    }
 
     String filePath = application.getRealPath("/user.txt");
     BufferedReader reader = new BufferedReader(new FileReader(filePath));
@@ -49,16 +52,6 @@
 
                     <h1>현재"<%=memberId%>"로 접속 중입니다</h1>
                     <div style="height: 600px; width: 600px; background-color: cornflowerblue">
-                        <%
-                            String fp = application.getRealPath("/chat.txt");
-                            BufferedReader r = new BufferedReader(new FileReader(fp));
-                            String txt =null;
-                            while((txt = r.readLine()) != null){
-                        %>
-                            <%=txt%>
-                        <%
-                            }
-                        %>
 
                     </div>
 
