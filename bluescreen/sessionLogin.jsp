@@ -21,13 +21,14 @@
     reader = new BufferedReader(new FileReader(filePath));
     while (true) {
       String str = reader.readLine();
-      String[] s = str.split("\\s");
+      out.println(str);
+//      String[] s = str.split("\\s");
 
       if(str == null) {
         break;
       }
-      if(id.equals(s[0])) {
-        if(password.equals(s[1])) {
+      if(id.equals(str)) {
+        if(password.equals(str)) {
           col = str;
         }
 
