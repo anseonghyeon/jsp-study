@@ -32,7 +32,7 @@
     String sign = request.getParameter("signup");
     if(sign.equals("signup")) {
 %>
-    <jsp:forward page="/signup.jsp"></jsp:forward>
+    <jsp:forward page="signup.jsp"></jsp:forward>
 <%
     }
 
