@@ -10,7 +10,8 @@
 <%
   String id = request.getParameter("id");
   String password = request.getParameter("password");
-
+  String sign = request.getParameter("signup");
+  out.println(sign);
   if(id.equals(password)) {
     session.setAttribute("MEMBERID",id);
 %>
