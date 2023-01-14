@@ -1,4 +1,7 @@
-<%--
+<%@ page import="java.io.BufferedReader" %>
+<%@ page import="java.io.FileNotFoundException" %>
+<%@ page import="java.io.IOException" %>
+<%@ page import="java.io.FileReader" %><%--
   Created by IntelliJ IDEA.
   User: anseonghyeon
   Date: 2023/01/14
@@ -6,18 +9,39 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html; charset=utf-8"%>
-<title>회원 페이지</title>
 <%
   String id = request.getParameter("id");
   String password = request.getParameter("password");
-  String sign = request.getParameter("signup");
-  out.println(sign);
-  if(id.equals(password)) {
+
+  String col = null;
+
+  BufferedReader reader = null;
+  try {
+    String filePath = application.getRealPath("/user.txt");
+    reader = new BufferedReader(new FileReader(filePath));
+    while (true) {
+      String str = reader.readLine();
+      if(str == null) {
+        break;
+      }
+      if(id.equals(str)) {
+        col = str;
+      }
+    }
+  } catch (FileNotFoundException e) {
+    out.println("파일이 존재하지 않음");
+  } catch (IOException e) {
+    out.println("파일을 읽을 수 없음");
+  } finally {
+    reader.close();
+  }
+
+  if(id.equals(col)) {
     session.setAttribute("MEMBERID",id);
 %>
 <html>
 <head>
-  <title>로그인성공</title>
+  <title>회원 페이지</title>
 </head>
 <body>
 로그인에 성공했습니다.<br>
