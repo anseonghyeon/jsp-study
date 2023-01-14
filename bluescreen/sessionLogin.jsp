@@ -21,7 +21,7 @@
     reader = new BufferedReader(new FileReader(filePath));
     while (true) {
       String str = reader.readLine();
-      String[] s = str.split(",");
+      String[] s = str.split("\\s");
 
       if(str == null) {
         break;
