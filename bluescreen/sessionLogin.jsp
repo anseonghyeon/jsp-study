@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html; charset=utf-8"%>
+<title>회원 페이지</title>
 <%
   String id = request.getParameter("id");
   String password = request.getParameter("password");
