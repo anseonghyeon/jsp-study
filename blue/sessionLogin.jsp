@@ -32,7 +32,7 @@
     String sign = request.getParameter("signup");
 
 
-    String filePath = application.getRealPath("/user.txt");
+    String filePath = application.getRealPath("/blue/user.txt");
     BufferedReader reader = new BufferedReader(new FileReader(filePath));
     String str =null;
     while((str = reader.readLine()) != null) {

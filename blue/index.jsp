@@ -21,7 +21,7 @@
 </head>
 <body>
 <div class="login-box">
-  <h1 style="color: cornflowerblue">블루스크린 채팅</h1>
+  <h1 style="color: cornflowerblue">로그인</h1>
   <form action="sessionLogin.jsp" method="post">
     ID<input type="text" name="id" class="form-control">
     <br>
