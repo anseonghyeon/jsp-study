@@ -20,6 +20,6 @@ request의 name 속성: ${requestScope.name}<br>
 code 파라미터: ${param.code}
 
 ${1+1;10+10}
-${var1=10 ; ''} ${var1}
+${var1=10 ; ''} \${var1}
 </body>
 </html>
