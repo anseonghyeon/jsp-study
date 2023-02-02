@@ -9,7 +9,7 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <%
     Thermometer thermometer = new Thermometer();
-    request.setAttribute("t",thermometer);
+//    request.setAttribute("t",thermometer);
 %>
 <html>
 <head>
