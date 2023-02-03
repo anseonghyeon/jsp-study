@@ -27,7 +27,8 @@ ${factorial(6)}
 <c:set var="lst" value="<%=java.util.Arrays.asList(1,2,3,4,5)%>"/>
 <c:forEach var="val" items="${lst}">
     <c:set var="sum" value="${sum+val}"/>
+    ${sum}
 </c:forEach>
-${sum}
+
 </body>
 </html>
