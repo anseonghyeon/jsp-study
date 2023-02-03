@@ -35,5 +35,13 @@ ${factorial(6)}
 <%--${lst.stream().filter(x->x%2==0).map(x->x*x).tolist()}--%>
 ${lst=[1,2,3,4,5];''}
 ${lst.stream().sum()}
+<%
+    java.util.Map<String, String> map = new java.util.HashMap<>();
+    map.put("code1","코드1");
+    map.put("code2","코드2");
+    request.setAttribute("map",map);
+
+%>
+${map.entrySet().stream().map(entry->entry.value).toList()}
 </body>
 </html>
