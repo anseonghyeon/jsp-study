@@ -7,6 +7,8 @@
 --%>
 <%@ page contentType ="text/html; charset=utf-8"%>
 <%@ page import="util.FormatUtil" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.Arrays" %>
 <%
     request.setAttribute("price",12345L);
 %>
@@ -45,6 +47,26 @@
 <%--${map.entrySet().stream().map(entry->entry.value).toList()}--%>
 <%--<br>--%>
 <%--${collection.stream().filter(x->x%2==0).toList().sum()}--%>
-${vals = [20,17,30,2,9,23];sortedVals = vals.stream().sorted().toList();sortedVals}
+<%--${vals = [20,17,30,2,9,23];sortedVals = vals.stream().sorted().toList();sortedVals}--%>
+<%!
+    public class Member {
+        private String name;
+        private int age;
+        public Member(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+        public String getName() {return name;}
+        public int getAge() {return age;}
+    }
+%>
+<%
+    List<Member> memberList = Arrays.asList(
+            new Member("홍길동",20),new Member("이순신",54),
+            new Member("유관순",19),new Member("왕건",42);
+    )
+    request.setAttribute("members",memberList);
+%>
+${members.stream().sorted().toList()}
 </body>
 </html>
