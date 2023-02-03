@@ -68,24 +68,29 @@
     request.setAttribute("members",memberList);
 %>
 <%--${sortedMem = members.stream().sorted((m1,m2)->m1.age.compareTo(m2.age)).toList();sortedMem}--%>
-${members.stream().count()}
-<br>
-${[1,2,3].stream().max().get()}
-<br>
-${[].stream().min().orElse('없음')}
-${[1,2,3].stream().min().orElse('없음')}
-${[].stream().min().orElseGet(()->-1)}
-${minValue = '-';''}
-${[17,8,3,9,99].stream().min().ifPresent(x->(minValue=x));minValue}
-<br>
-${[1,2,3,4,5].stream().sum()}
-<br>
-${[1,2,3,4].stream().average().get()}
-<br>
-${[1,2,3,4,5].stream().average().get()}
-${[1,2,3,4,5].stream().average().orElse(null)}
+<%--${members.stream().count()}--%>
+<%--<br>--%>
+<%--${[1,2,3].stream().max().get()}--%>
+<%--<br>--%>
+<%--${[].stream().min().orElse('없음')}--%>
+<%--${[1,2,3].stream().min().orElse('없음')}--%>
+<%--${[].stream().min().orElseGet(()->-1)}--%>
+<%--${minValue = '-';''}--%>
+<%--${[17,8,3,9,99].stream().min().ifPresent(x->(minValue=x));minValue}--%>
+<%--<br>--%>
+<%--${[1,2,3,4,5].stream().sum()}--%>
+<%--<br>--%>
+<%--${[1,2,3,4].stream().average().get()}--%>
+<%--<br>--%>
+<%--${[1,2,3,4,5].stream().average().get()}--%>
+<%--${[1,2,3,4,5].stream().average().orElse(null)}--%>
 <%--${[].stream().orElse(0)}--%>
-${[].stream().orElse(null)}
+<%--${[].stream().orElse(null)}--%>
 <%--${[1].stream().average().ifPresent(x->someObject.add(x))}--%>
+<%--${someLongVals.stream().min().get()}--%>
+${lst = [1,2,3,4,5];''}
+
+${matchOpt = lst.stream().anyMatch(v->v>4);''}
+${matchOpt.get()}
 </body>
 </html>
