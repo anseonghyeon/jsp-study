@@ -24,5 +24,10 @@ ${factorial(5)}
 <%-- 람다식의 파라미터가 한 개인 경우 파라미터의 괄호를 생략해도 된다. --%>
 ${factorial = n -> n == 1 ? 1 : n * factorial(n-1); ''}
 ${factorial(6)}
+<c:set var="lst" value="<%=java.util.Arrays.asList(1,2,3,4,5)%>"/>
+<c:forEach var="val" items="${lst}">
+    <c:set var="sum" value="${sum+val}"/>
+</c:forEach>
+${sum}
 </body>
 </html>
