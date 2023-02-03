@@ -71,5 +71,7 @@
 ${members.stream().count()}
 <br>
 ${[1,2,3].stream().max().get()}
+<br>
+${[].stream().min().get()}
 </body>
 </html>
