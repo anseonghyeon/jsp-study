@@ -75,5 +75,7 @@ ${[1,2,3].stream().max().get()}
 ${[].stream().min().orElse('없음')}
 ${[1,2,3].stream().min().orElse('없음')}
 ${[].stream().min().orElseGet(()->-1)}
+${minValue = '-';''}
+${[1,2,3].stream().min().ifPresent(x->(minValue=x));minValue}
 </body>
 </html>
