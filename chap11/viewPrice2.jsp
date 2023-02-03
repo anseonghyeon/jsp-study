@@ -20,5 +20,9 @@ ${Long.parseLong('10')}
 <br>
 ${factorial = (n) -> n == 1 ? 1 : n * factorial(n-1);''}
 ${factorial(5)}
+<br>
+<%-- 람다식의 파라미터가 한 개인 경우 파라미터의 괄호를 생략해도 된다. --%>
+${factorial = n -> n == 1 ? 1 : n * factorial(n-1); ''}
+${factorial(6)}
 </body>
 </html>
