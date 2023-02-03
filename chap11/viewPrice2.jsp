@@ -43,5 +43,7 @@ ${lst.stream().sum()}
 
 %>
 ${map.entrySet().stream().map(entry->entry.value).toList()}
+<br>
+${collection.stream().filter(x->x%2==0).toList()}
 </body>
 </html>
