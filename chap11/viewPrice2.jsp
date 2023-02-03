@@ -70,8 +70,9 @@
 <%--${sortedMem = members.stream().sorted((m1,m2)->m1.age.compareTo(m2.age)).toList();sortedMem}--%>
 ${members.stream().count()}
 <br>
-${[1,2,3].stream().max(2).get()}
+${[1,2,3].stream().max().get()}
 <br>
-${[1,2,3].stream().min().get()}
+${[].stream().min().orElse('없음')}
+${[1,2,3].stream().min.orElse('없음')}
 </body>
 </html>
