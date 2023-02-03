@@ -69,5 +69,7 @@
 %>
 <%--${sortedMem = members.stream().sorted((m1,m2)->m1.age.compareTo(m2.age)).toList();sortedMem}--%>
 ${members.stream().count()}
+<br>
+${[1,2,3].stream().max().get()}
 </body>
 </html>
