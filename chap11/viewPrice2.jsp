@@ -17,5 +17,7 @@
 <body>
 가격은 <b>${FormatUtil.number(price,'#,##0')}</b>원 입니다.
 ${Long.parseLong('10')}
+<br>
+${factorial = (n) -> n == 1 ? 1 : n * factorial(n-1);''}
 </body>
 </html>
