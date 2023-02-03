@@ -32,6 +32,8 @@ ${factorial(6)}
 <%--<c:set var="lst" value="<%=java.util.Arrays.asList(1,2,3,4,5)%>"/>--%>
 <%--<c:set var="sum" value="${lst.stream().sum()}"/>--%>
 
-${lst.stream().filter(x->x%2==0).map(x->x*x).tolist()}
+<%--${lst.stream().filter(x->x%2==0).map(x->x*x).tolist()}--%>
+${lst=[1,2,3,4,5];''}
+${lst.stream().sum()}
 </body>
 </html>
