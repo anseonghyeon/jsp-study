@@ -11,6 +11,7 @@
 <%@ page import="java.util.Arrays" %>
 <%@ page isELIgnored="true"%>
 <%@ page deferredSyntaxAllowedAsLiteral="true"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
     request.setAttribute("price",12345L);
 %>
@@ -90,9 +91,14 @@
 <%--${[].stream().orElse(null)}--%>
 <%--${[1].stream().average().ifPresent(x->someObject.add(x))}--%>
 <%--${someLongVals.stream().min().get()}--%>
-${lst = [1,2,3,4,5];''}
+<%--${lst = [1,2,3,4,5];''}--%>
 
-${matchOpt = lst.stream().anyMatch(v->v>4);''}
-${matchOpt.get()}
+<%--${matchOpt = lst.stream().anyMatch(v->v>4);''}--%>
+<%--${matchOpt.get()}--%>
+<%
+    Member member = new Member();
+%>
+<c:set target="<%= member%>" property="name" value="안성현"/>
+<%=member.getName()%>
 </body>
 </html>
