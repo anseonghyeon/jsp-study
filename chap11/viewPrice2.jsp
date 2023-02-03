@@ -73,6 +73,6 @@ ${members.stream().count()}
 ${[1,2,3].stream().max().get()}
 <br>
 ${[].stream().min().orElse('없음')}
-${[1,2,3].stream().min.orElse('없음')}
+${[1,2,3].stream().min().orElse('없음')}
 </body>
 </html>
