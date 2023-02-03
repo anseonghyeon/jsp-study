@@ -67,6 +67,6 @@
     );
     request.setAttribute("members",memberList);
 %>
-${members.stream().sorted().toList()}
+${sortedMem = members.stream().sorted((m1,m2)->m1.age.compareTo(m2.age)).toList()}
 </body>
 </html>
