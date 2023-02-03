@@ -79,5 +79,7 @@ ${minValue = '-';''}
 ${[17,8,3,9,99].stream().min().ifPresent(x->(minValue=x));minValue}
 <br>
 ${[1,2,3,4,5].stream().sum()}
+<br>
+${[1,2,3,4].stream().average().get()}
 </body>
 </html>
