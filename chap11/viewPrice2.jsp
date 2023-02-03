@@ -81,5 +81,11 @@ ${[17,8,3,9,99].stream().min().ifPresent(x->(minValue=x));minValue}
 ${[1,2,3,4,5].stream().sum()}
 <br>
 ${[1,2,3,4].stream().average().get()}
+<br>
+${[1,2,3,4,5].stream().average().get()}
+${[1,2,3,4,5].stream().average().orElse(null)}
+${[].stream().orElse(0)}
+${[].stream().orElse(null)}
+<%--${[1].stream().average().ifPresent(x->someObject.add(x))}--%>
 </body>
 </html>
