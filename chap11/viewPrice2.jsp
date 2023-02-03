@@ -63,8 +63,8 @@
 <%
     List<Member> memberList = Arrays.asList(
             new Member("홍길동",20),new Member("이순신",54),
-            new Member("유관순",19),new Member("왕건",42);
-    )
+            new Member("유관순",19),new Member("왕건",42)
+    );
     request.setAttribute("members",memberList);
 %>
 ${members.stream().sorted().toList()}
