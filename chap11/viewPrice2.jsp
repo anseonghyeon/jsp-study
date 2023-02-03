@@ -9,6 +9,8 @@
 <%@ page import="util.FormatUtil" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Arrays" %>
+<%@ page isELIgnored="true"%>
+<%@ page deferredSyntaxAllowedAsLiteral="true"%>
 <%
     request.setAttribute("price",12345L);
 %>
